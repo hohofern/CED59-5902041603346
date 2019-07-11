@@ -1,1 +1,3 @@
-
+def return_42(num):
+  print(num)
+return_42("42")
