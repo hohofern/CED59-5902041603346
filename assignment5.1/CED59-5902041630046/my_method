@@ -1,0 +1,4 @@
+def my_method(n1,n2):
+  return n1*n2
+result = my_method(15,5)
+print(result)
