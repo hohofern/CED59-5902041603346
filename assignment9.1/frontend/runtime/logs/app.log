@@ -1,0 +1,1068 @@
+2019-09-18 15:37:04 [::1][-][g3s9oeh4n0ojaeu3jf6td65pvf][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(393): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(412): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(57): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(849): yii\db\Schema->getQueryBuilder()
+#12 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#13 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Query.php(421): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#14 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(187): yii\db\Query->exists()
+#15 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#16 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#17 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1078): call_user_func(Object(Closure), Object(yii\db\Connection))
+#18 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#19 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#20 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#21 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\models\SignupForm.php(47): yii\base\Model->validate()
+#22 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#23 [internal function]: frontend\controllers\SiteController->actionSignup()
+#24 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#27 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#28 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php:635
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(393): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(412): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(57): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Schema.php(248): yii\db\mysql\Schema->createQueryBuilder()
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(849): yii\db\Schema->getQueryBuilder()
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Query.php(421): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#12 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(187): yii\db\Query->exists()
+#13 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#14 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#15 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1078): call_user_func(Object(Closure), Object(yii\db\Connection))
+#16 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#17 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#18 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#19 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\models\SignupForm.php(47): yii\base\Model->validate()
+#20 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#21 [internal function]: frontend\controllers\SiteController->actionSignup()
+#22 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#25 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#26 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+Additional Information:
+
+2019-09-18 15:37:04 [::1][-][g3s9oeh4n0ojaeu3jf6td65pvf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'W--txoQzLMyuBBzP-70bKy5OGYuESmfRBH_v3RUI5h8plcC36QpKuuNsWL3JzigSQABd89Z5CqgzSqHrW1KQTA=='
+    'SignupForm' => [
+        'username' => 'korawitch'
+        'email' => 'korawitch@email.com'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => 'g3s9oeh4n0ojaeu3jf6td65pvf'
+    '_csrf-frontend' => '397b36391ac43662e949d0cb40b024a49ea982fd7d09b15d9fb1930a295f98b1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rzmqm9fvMhDr2s39nNDxR3my75N6NZvS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '236'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/CED59-5902041620032/assignment9/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=g3s9oeh4n0ojaeu3jf6td65pvf; _csrf-frontend=397b36391ac43662e949d0cb40b024a49ea982fd7d09b15d9fb1930a295f98b1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rzmqm9fvMhDr2s39nNDxR3my75N6NZvS%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '50496'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568813824.701
+    'REQUEST_TIME' => 1568813824
+]
+2019-09-18 15:38:47 [::1][-][g3s9oeh4n0ojaeu3jf6td65pvf][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 's5902041620032.user' doesn't exist in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php(1158): yii\db\Command->internalExecute('SELECT EXISTS(S...')
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Query.php(425): yii\db\Command->queryScalar()
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(187): yii\db\Query->exists()
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#6 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1078): call_user_func(Object(Closure), Object(yii\db\Connection))
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\models\SignupForm.php(47): yii\base\Model->validate()
+#12 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 's5902041620032.user' doesn't exist
+The SQL being executed was: SELECT EXISTS(SELECT * FROM `user` WHERE `user`.`username`='korawitch') in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT EXISTS(S...')
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php(1158): yii\db\Command->internalExecute('SELECT EXISTS(S...')
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Query.php(425): yii\db\Command->queryScalar()
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(187): yii\db\Query->exists()
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#6 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\db\Connection.php(1078): call_user_func(Object(Closure), Object(yii\db\Connection))
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\models\SignupForm.php(47): yii\base\Model->validate()
+#12 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\controllers\SiteController.php(156): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 's5902041620032.user' doesn't exist
+)
+
+2019-09-18 15:38:47 [::1][-][g3s9oeh4n0ojaeu3jf6td65pvf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'eG3a7X81q9xTUMasFgY5ZEL9oajoSNG92HLz3MQeEZYKF7ecEgzNqh44gt4kdQpdLLPl0Lp7vMTvR73qikRnxQ=='
+    'SignupForm' => [
+        'username' => 'korawitch'
+        'email' => 'korawitch@email.com'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => 'g3s9oeh4n0ojaeu3jf6td65pvf'
+    '_csrf-frontend' => '397b36391ac43662e949d0cb40b024a49ea982fd7d09b15d9fb1930a295f98b1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rzmqm9fvMhDr2s39nNDxR3my75N6NZvS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '236'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/CED59-5902041620032/assignment9/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=g3s9oeh4n0ojaeu3jf6td65pvf; _csrf-frontend=397b36391ac43662e949d0cb40b024a49ea982fd7d09b15d9fb1930a295f98b1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rzmqm9fvMhDr2s39nNDxR3my75N6NZvS%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '50515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568813927.246
+    'REQUEST_TIME' => 1568813927
+]
+2019-09-19 11:02:49 [::1][-][n0ot140u70of7st7j6jvrvihji][error][yii\base\ErrorException:1] yii\base\ErrorException: Class 'common\Subject' not found in C:\xampp\htdocs\CED59-5902041620032\assignment9\backend\models\Subject.php:4
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-09-19 11:02:49 [::1][-][n0ot140u70of7st7j6jvrvihji][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'jqEmIB6LrPbo878-yovHHVRBIf35aMlBtaEVyo-Jnmvs9G1GWv7BrtC-xQ6m4Z8tAjZnur8gvgfe9kaf6bmrXA=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\Subject'
+        'searchModelClass' => 'backend\\models\\SubjectSearch'
+        'controllerClass' => 'backend\\models\\SubjectController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => 'n0ot140u70of7st7j6jvrvihji'
+    'advanced-backend' => '7mtbi4ubc54iu06gsdcl2lc1pq'
+    '_csrf-backend' => 'ad7a57b9ad41db739b1c8c77355c54e586c9b97256c07d1b3a2fa4ef5f32d27ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4CTQYFV0nehbNUeo1bmlPVz_JuBSaR4L\";}'
+    '_csrf-frontend' => '18889653bbff308f9cee0c0a47f59cba87e339ed46f0313286a6995ffa197be9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bUKfDumX8Mz0ljX0VwFGFHwFkWSUf057\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '544'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/CED59-5902041620032/assignment9/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=n0ot140u70of7st7j6jvrvihji; advanced-backend=7mtbi4ubc54iu06gsdcl2lc1pq; _csrf-backend=ad7a57b9ad41db739b1c8c77355c54e586c9b97256c07d1b3a2fa4ef5f32d27ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224CTQYFV0nehbNUeo1bmlPVz_JuBSaR4L%22%3B%7D; _csrf-frontend=18889653bbff308f9cee0c0a47f59cba87e339ed46f0313286a6995ffa197be9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bUKfDumX8Mz0ljX0VwFGFHwFkWSUf057%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '53075'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1568883769.489
+    'REQUEST_TIME' => 1568883769
+]
+2019-09-26 10:11:27 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/signup". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/signup', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:11:27 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'gii/signup'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '54950'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fsignup'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=gii%2Fsignup'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569485487.248
+    'REQUEST_TIME' => 1569485487
+]
+2019-09-26 10:19:29 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subject". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subject', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:19:29 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '54994'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subject'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subject'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569485969.915
+    'REQUEST_TIME' => 1569485969
+]
+2019-09-26 10:19:59 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subjects". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subjects', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:19:59 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subjects'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '54996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subjects'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subjects'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569485999.512
+    'REQUEST_TIME' => 1569485999
+]
+2019-09-26 10:20:01 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subjects". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subjects', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:20:01 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subjects'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '54997'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subjects'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subjects'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569486001.239
+    'REQUEST_TIME' => 1569486001
+]
+2019-09-26 10:20:05 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subject". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subject', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:20:05 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '54996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subject'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subject'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569486005.294
+    'REQUEST_TIME' => 1569486005
+]
+2019-09-26 10:20:09 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subject". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subject', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:20:09 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '54997'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subject'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subject'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569486009.283
+    'REQUEST_TIME' => 1569486009
+]
+2019-09-26 10:20:28 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Subject". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Subject', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:20:28 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'Subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '55000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Subject'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=Subject'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569486028.745
+    'REQUEST_TIME' => 1569486028
+]
+2019-09-26 10:21:11 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subject". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subject', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:21:11 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '55003'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subject'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subject'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569486071.249
+    'REQUEST_TIME' => 1569486071
+]
+2019-09-26 10:43:28 [::1][-][222828epv32vof9ndr426snh25][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "subject". in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('subject', Array)
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-26 10:43:27 [::1][-][222828epv32vof9ndr426snh25][info][application] $_GET = [
+    'r' => 'subject'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-4854c6e3' => '6458e503-4d88-4553-9cd5-f9e6077dd0d3'
+    'advanced-frontend' => '222828epv32vof9ndr426snh25'
+    '_csrf-frontend' => 'e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb\";}'
+    'advanced-backend' => 'nvdvv5f9fcla49oifm6c6qoev2'
+    '_csrf-backend' => '044560af9459af47bf3bba74d5670ba7b3cec3b5bf8f77820633513501671eb1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kMZ8vmJDKFofsHh3ucSiJevpd3StX07A\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-4854c6e3=6458e503-4d88-4553-9cd5-f9e6077dd0d3; advanced-frontend=222828epv32vof9ndr426snh25; _csrf-frontend=e46246bfab5c76fbbb8f34538a0ec7597f4672f3d909c52546faab545a6700bca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UatLjOMBDtKPb3fWtXxrdd1wntMlFUnb%22%3B%7D; advanced-backend=nvdvv5f9fcla49oifm6c6qoev2; _csrf-backend=044560af9459af47bf3bba74d5670ba7b3cec3b5bf8f77820633513501671eb1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kMZ8vmJDKFofsHh3ucSiJevpd3StX07A%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REMOTE_PORT' => '55171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=subject'
+    'REQUEST_URI' => '/CED59-5902041620032/assignment9/frontend/web/index.php?r=subject'
+    'SCRIPT_NAME' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'PHP_SELF' => '/CED59-5902041620032/assignment9/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1569487407.964
+    'REQUEST_TIME' => 1569487407
+]

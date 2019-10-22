@@ -1,0 +1,270 @@
+2019-10-03 10:48:56 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Controller.php(164): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\yii(23): yii\base\Application->run()
+#12 {main}
+2019-10-03 10:48:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Palm\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132090645859791352'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PALM'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GOOGLE_DEFAULT_CLIENT_ID' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_SECRET' => 'no'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Palm'
+    'LOCALAPPDATA' => 'C:\\Users\\Palm\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PALM'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OculusBase' => 'C:\\Program Files\\Oculus\\'
+    'OneDrive' => 'C:\\Users\\Palm\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Palm\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Palm\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Palm\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Palm\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PALM'
+    'USERDOMAIN_ROAMINGPROFILE' => 'PALM'
+    'USERNAME' => 'Palm'
+    'USERPROFILE' => 'C:\\Users\\Palm'
+    'windir' => 'C:\\Windows'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.38.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1570092534.0941
+    'REQUEST_TIME' => 1570092534
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2019-10-03 10:54:14 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Controller.php(164): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\yii(23): yii\base\Application->run()
+#12 {main}
+2019-10-03 10:54:12 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Palm\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132090645859791352'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PALM'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GOOGLE_DEFAULT_CLIENT_ID' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_SECRET' => 'no'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Palm'
+    'LOCALAPPDATA' => 'C:\\Users\\Palm\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PALM'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OculusBase' => 'C:\\Program Files\\Oculus\\'
+    'OneDrive' => 'C:\\Users\\Palm\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Palm\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Palm\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Palm\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Palm\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PALM'
+    'USERDOMAIN_ROAMINGPROFILE' => 'PALM'
+    'USERNAME' => 'Palm'
+    'USERPROFILE' => 'C:\\Users\\Palm'
+    'windir' => 'C:\\Windows'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.38.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1570092852.2831
+    'REQUEST_TIME' => 1570092852
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2019-10-03 10:54:38 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Controller.php(164): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\CED59-5902041620032\assignment9\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\CED59-5902041620032\assignment9\yii(23): yii\base\Application->run()
+#12 {main}
+2019-10-03 10:54:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Palm\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132090645859791352'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PALM'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GOOGLE_DEFAULT_CLIENT_ID' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_SECRET' => 'no'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Palm'
+    'LOCALAPPDATA' => 'C:\\Users\\Palm\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PALM'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OculusBase' => 'C:\\Program Files\\Oculus\\'
+    'OneDrive' => 'C:\\Users\\Palm\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Palm\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\Palm\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;;D:\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Palm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Palm\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.2'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'D:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Palm\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Palm\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PALM'
+    'USERDOMAIN_ROAMINGPROFILE' => 'PALM'
+    'USERNAME' => 'Palm'
+    'USERPROFILE' => 'C:\\Users\\Palm'
+    'windir' => 'C:\\Windows'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.38.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1570092877.5409
+    'REQUEST_TIME' => 1570092877
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
